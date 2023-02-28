@@ -1,0 +1,13 @@
+{
+	"required": true,
+	"minVersion": "0.8",
+	"package": "intezium.ender_dragon_egg_respawn.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"EnderDragonFightMixin"
+	],
+	"client": [],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

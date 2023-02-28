@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "ender_dragon_egg_respawn",
+	"version": "${version}",
+
+	"name": "Ender Dragon Egg Respawn",
+	"description": "Get an egg from each ender dragon.",
+	"authors": [
+		"Intezium"
+	],
+	"contact": {
+		"homepage": "https://www.curseforge.com/minecraft/mc-mods/ender-dragon-egg-respawn-fabric",
+		"sources": "https://github.com/Intezium/EnderDragonEggRespawn"
+	},
+
+	"license": "MIT",
+	"icon": "assets/ender_dragon_egg_respawn/icon.png",
+
+	"environment": "*",
+	"mixins": [
+		"ender_dragon_egg_respawn.mixins.json"
+	],
+
+	"depends": {
+		"fabricloader": ">=0.14.6",
+		"minecraft": "~1.18.2",
+		"java": ">=17"
+	}
+}
