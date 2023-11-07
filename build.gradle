@@ -17,11 +17,11 @@ dependencies {
 processResources {
 	filesMatching("fabric.mod.json") {
 		expand(
-				"mod_id": archives_base_name,
-				"mod_version": mod_version,
-				"minecraft_version": minecraft_version,
-				"fabric_loader_version": loader_version,
-				"java_version": java_version
+			"mod_id": archives_base_name,
+			"mod_version": mod_version,
+			"minecraft_version": minecraft_version,
+			"fabric_loader_version": loader_version,
+			"java_version": java_version
 		)
 	}
 }
@@ -31,9 +31,9 @@ tasks.remapJar {
 	archiveClassifier.set("${minecraft_version}-Fabric")
 
 	archiveFileName.set(
-			"${archiveFileName.get()}-" +
-			"${archiveVersion.get()}_" +
-			"${archiveClassifier.get()}." +
-			"${archiveExtension.get()}"
+		"${archiveFileName.get()}-" +
+		"${archiveVersion.get()}_" +
+		"${archiveClassifier.get()}." +
+		"${archiveExtension.get()}"
 	)
 }
